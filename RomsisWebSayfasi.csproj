@@ -1,0 +1,493 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED085011-0DA3-4F57-93FD-B8CCBBB6BC7B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RomsisWebSayfasi</RootNamespace>
+    <AssemblyName>RomsisWebSayfasi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MyLibrary, Version=16.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Anasayfa.css" />
+    <Content Include="bankaaktarimyazilimi.aspx" />
+    <Content Include="bankrom-1.css" />
+    <Content Include="basindabiz-1.css" />
+    <Content Include="bizdenkareler-1.css" />
+    <Content Include="bizitercihedenler-1.css" />
+    <Content Include="Blog-Template.css" />
+    <Content Include="chefrestoran-1.css" />
+    <Content Include="CloudDepoSayim-1.css" />
+    <Content Include="default.aspx" />
+    <Content Include="defaultENG.aspx" />
+    <Content Include="demotalepet.aspx" />
+    <Content Include="deposayimyazilimi.aspx" />
+    <Content Include="depotalepet-1.css" />
+    <Content Include="EklenecekMailerListesi.txt" />
+    <Content Include="fuarlarimiz.aspx" />
+    <Content Include="fuarlarimiz.css" />
+    <Content Include="Global.asax" />
+    <Content Include="google42d8f73facc722f9.html" />
+    <Content Include="googlea84fb6cf45ad1fec.html" />
+    <Content Include="googleaa0593050c1a3b76.html" />
+    <Content Include="googledce975f34d29dcbd.html" />
+    <Content Include="gtag.js" />
+    <Content Include="hakkimizda-1.css" />
+    <Content Include="iletisim-1.css" />
+    <Content Include="iletisim.aspx" />
+    <Content Include="images\-min1.jpg" />
+    <Content Include="images\2.jpeg" />
+    <Content Include="images\2013230187.jpg" />
+    <Content Include="images\28a6a4bf732b246065e86fcee7889068b30f30e9ab0eb80ea4f174268c7c96dbe68e2ef96673bb08a9cf219c3dadb0946228c95e1529ec639a2381_1280.jpg" />
+    <Content Include="images\2c363cea606f515e74b1e427f2b437c0.jpeg" />
+    <Content Include="images\3.jpeg" />
+    <Content Include="images\3adb5dd3bd3e38ce1a9e6dae171168867e3bf4fb32352303038722d1428e056471bf1ab45cf6dc61090bc3ff2f00a356d37980067332b038e68bad_1280.png" />
+    <Content Include="images\3bd9cc3fb54d3383cce86206689ca9857864dbd57b64bd98ba80b17144cb0087dfd76fe4a4c9d838392837b4a52d924bb3d2e9c4a6e4a2569c4e8f_1280.jpg" />
+    <Content Include="images\4.jpeg" />
+    <Content Include="images\5e2be80070380e0c60f58c56.jpg" />
+    <Content Include="images\6.jpeg" />
+    <Content Include="images\7.jpeg" />
+    <Content Include="images\8.jpeg" />
+    <Content Include="images\a1.png" />
+    <Content Include="images\a10.png" />
+    <Content Include="images\a11.png" />
+    <Content Include="images\a12.png" />
+    <Content Include="images\a13.png" />
+    <Content Include="images\a14.jpg" />
+    <Content Include="images\a15.png" />
+    <Content Include="images\a16.png" />
+    <Content Include="images\a161.png" />
+    <Content Include="images\a17.png" />
+    <Content Include="images\a19.png" />
+    <Content Include="images\a2.png" />
+    <Content Include="images\a20.jpg" />
+    <Content Include="images\a21.jpg" />
+    <Content Include="images\a22.jpg" />
+    <Content Include="images\a23.jpg" />
+    <Content Include="images\a24.jpg" />
+    <Content Include="images\a26.jpg" />
+    <Content Include="images\a27.jpg" />
+    <Content Include="images\a28.jpg" />
+    <Content Include="images\a29.jpg" />
+    <Content Include="images\a3.png" />
+    <Content Include="images\a30.jpg" />
+    <Content Include="images\a4.png" />
+    <Content Include="images\a5.png" />
+    <Content Include="images\a6.png" />
+    <Content Include="images\a7.png" />
+    <Content Include="images\a8.png" />
+    <Content Include="images\a9.png" />
+    <Content Include="images\about-us_who-we-are_slider-4.jpg" />
+    <Content Include="images\az1.png" />
+    <Content Include="images\azhobco.png" />
+    <Content Include="images\bank-getty.jpg" />
+    <Content Include="images\bank-statement-01.png" />
+    <Content Include="images\bankrom.jpg" />
+    <Content Include="images\bni1.png" />
+    <Content Include="images\bni2.png" />
+    <Content Include="images\bni3.png" />
+    <Content Include="images\cek1.png" />
+    <Content Include="images\cnr1.png" />
+    <Content Include="images\cnr2.png" />
+    <Content Include="images\cnr3.png" />
+    <Content Include="images\default-image.jpg" />
+    <Content Include="images\dfg-min.jpg" />
+    <Content Include="images\durandogan.png" />
+    <Content Include="images\eemkon1.png" />
+    <Content Include="images\eemkon2.png" />
+    <Content Include="images\eemkon3.png" />
+    <Content Include="images\ekip.png" />
+    <Content Include="images\es1.png" />
+    <Content Include="images\ezel_civata.png" />
+    <Content Include="images\flamingoo.jpg" />
+    <Content Include="images\flormar.png" />
+    <Content Include="images\GettyImages-4688378871.jpg" />
+    <Content Include="images\GettyImages-617072278-5a2de409ec2f640037aefe05.jpg" />
+    <Content Include="images\h4.png" />
+    <Content Include="images\h5.png" />
+    <Content Include="images\h6.png" />
+    <Content Include="images\ikon_yapi.png" />
+    <Content Include="images\ime2.png" />
+    <Content Include="images\inflight-catering.png" />
+    <Content Include="images\inflight.jpg" />
+    <Content Include="images\inflight21.png" />
+    <Content Include="images\ingiltere.png" />
+    <Content Include="images\konusma.png" />
+    <Content Include="images\libraff.png" />
+    <Content Include="images\marsoto.png" />
+    <Content Include="images\mertsav.jpg" />
+    <Content Include="images\met-kagit.png" />
+    <Content Include="images\ocasso.jpg" />
+    <Content Include="images\odul1.jpg" />
+    <Content Include="images\odul2.jpg" />
+    <Content Include="images\odul3.png" />
+    <Content Include="images\odul4.jpg" />
+    <Content Include="images\ozdemirbaglar.png" />
+    <Content Include="images\petzoo1.png" />
+    <Content Include="images\petzoo11.png" />
+    <Content Include="images\petzoo2.png" />
+    <Content Include="images\petzoo21.png" />
+    <Content Include="images\petzoo3.png" />
+    <Content Include="images\petzoo31.png" />
+    <Content Include="images\pexels-photo-911758.jpeg" />
+    <Content Include="images\retail-analytics-market.jpg" />
+    <Content Include="images\retailpro.jpg" />
+    <Content Include="images\retailsmallbusinness.jpg" />
+    <Content Include="images\retoran.jpg" />
+    <Content Include="images\Romsis72dpi.png" />
+    <Content Include="images\RomsisChef.jpg" />
+    <Content Include="images\RomsisCloudSayim1.jpg" />
+    <Content Include="images\RomsisHarita.jpg" />
+    <Content Include="images\RomsisRetailPro1.jpg" />
+    <Content Include="images\RomsisSahaSatis.jpg" />
+    <Content Include="images\RomsisSatinAlma.jpg" />
+    <Content Include="images\RomsisSmall.jpg" />
+    <Content Include="images\Romsis_beyaz.png" />
+    <Content Include="images\sahasatis.jpg" />
+    <Content Include="images\saitiskender.png" />
+    <Content Include="images\satinalma.jpg" />
+    <Content Include="images\Screen-Shot-2018-07-03-at-17.50.26.png" />
+    <Content Include="images\teas_hepkitap.png" />
+    <Content Include="images\tr1.png" />
+    <Content Include="images\Transavia-HOC3896-185-1600x1066.jpg" />
+    <Content Include="images\Warehouse-inventory-count-15fd6c5f1f4946d48ddf2c3558faf975.jpg" />
+    <Content Include="images\warehouse-wifi-problems1.jpg" />
+    <Content Include="images\warehouse12.jpg" />
+    <Content Include="images\WWF.jpg" />
+    <Content Include="images\yukselen.jpg" />
+    <Content Include="images\YX67RPJSVFDONKQLYASJ4DOYKM.jpg" />
+    <Content Include="inflight-1.css" />
+    <Content Include="inflight.aspx" />
+    <Content Include="jquery.js" />
+    <Content Include="konusma-1.css" />
+    <Content Include="konusma.aspx" />
+    <Content Include="MasterDepoPage-1.css" />
+    <Content Include="MyLibrary.dll" />
+    <Content Include="nicepage.css" />
+    <Content Include="nicepage.js" />
+    <Content Include="oduler.aspx" />
+    <Content Include="odulerimiz.css" />
+    <Content Include="OnlineSayi.txt" />
+    <Content Include="perakendesatisproyazilimi.aspx" />
+    <Content Include="perakendesatisyazilimi.aspx" />
+    <Content Include="Post-Template.css" />
+    <Content Include="RBS.ico" />
+    <Content Include="restorankafe.aspx" />
+    <Content Include="retailpro-1.css" />
+    <Content Include="RetailSmallBusiness-1.css" />
+    <Content Include="robots.txt" />
+    <Content Include="romsis404.aspx" />
+    <Content Include="Romsis72dpi.png" />
+    <Content Include="Romsis72dpi_beyaz.png" />
+    <Content Include="romsisakademi-1.css" />
+    <Content Include="romsisbasindabiz.aspx" />
+    <Content Include="romsisbizdenkareler.aspx" />
+    <Content Include="romsisbizitercihedenler.aspx" />
+    <Content Include="RomsisHarita.jpg" />
+    <Content Include="RomsisMail.aspx" />
+    <Content Include="SiteHaritasi.xml" />
+    <Content Include="RomsisSiteMaps.xml" />
+    <Content Include="romsisyazilim.aspx" />
+    <Content Include="Romsis_beyaz.png" />
+    <Content Include="sahasatis-1.css" />
+    <Content Include="sahasatisyazilimi.aspx" />
+    <Content Include="satinalmataleptedarikyazilimi.aspx" />
+    <Content Include="satinalmatedarik-1.css" />
+    <Content Include="SilinecekMailer.txt" />
+    <Content Include="stokdepoyazilimi.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="yazilimegitimakademi.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bankaaktarimyazilimi.aspx.cs">
+      <DependentUpon>bankaaktarimyazilimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bankaaktarimyazilimi.aspx.designer.cs">
+      <DependentUpon>bankaaktarimyazilimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="defaultENG.aspx.cs">
+      <DependentUpon>defaultENG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="defaultENG.aspx.designer.cs">
+      <DependentUpon>defaultENG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="demotalepet.aspx.cs">
+      <DependentUpon>demotalepet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="demotalepet.aspx.designer.cs">
+      <DependentUpon>demotalepet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deposayimyazilimi.aspx.cs">
+      <DependentUpon>deposayimyazilimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deposayimyazilimi.aspx.designer.cs">
+      <DependentUpon>deposayimyazilimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuarlarimiz.aspx.cs">
+      <DependentUpon>fuarlarimiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuarlarimiz.aspx.designer.cs">
+      <DependentUpon>fuarlarimiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.aspx.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iletisim.aspx.designer.cs">
+      <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inflight.aspx.cs">
+      <DependentUpon>inflight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inflight.aspx.designer.cs">
+      <DependentUpon>inflight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="konusma.aspx.cs">
+      <DependentUpon>konusma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="konusma.aspx.designer.cs">
+      <DependentUpon>konusma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oduler.aspx.cs">
+      <DependentUpon>oduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="oduler.aspx.designer.cs">
+      <DependentUpon>oduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="perakendesatisproyazilimi.aspx.cs">
+      <DependentUpon>perakendesatisproyazilimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="perakendesatisproyazilimi.aspx.designer.cs">
+      <DependentUpon>perakendesatisproyazilimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="perakendesatisyazilimi.aspx.cs">
+      <DependentUpon>perakendesatisyazilimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="perakendesatisyazilimi.aspx.designer.cs">
+      <DependentUpon>perakendesatisyazilimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="restorankafe.aspx.cs">
+      <DependentUpon>restorankafe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="restorankafe.aspx.designer.cs">
+      <DependentUpon>restorankafe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="romsis404.aspx.cs">
+      <DependentUpon>romsis404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="romsis404.aspx.designer.cs">
+      <DependentUpon>romsis404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="romsisbasindabiz.aspx.cs">
+      <DependentUpon>romsisbasindabiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="romsisbasindabiz.aspx.designer.cs">
+      <DependentUpon>romsisbasindabiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="romsisbizdenkareler.aspx.cs">
+      <DependentUpon>romsisbizdenkareler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="romsisbizdenkareler.aspx.designer.cs">
+      <DependentUpon>romsisbizdenkareler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="romsisbizitercihedenler.aspx.cs">
+      <DependentUpon>romsisbizitercihedenler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="romsisbizitercihedenler.aspx.designer.cs">
+      <DependentUpon>romsisbizitercihedenler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RomsisMail.aspx.cs">
+      <DependentUpon>RomsisMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RomsisMail.aspx.designer.cs">
+      <DependentUpon>RomsisMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="romsisyazilim.aspx.cs">
+      <DependentUpon>romsisyazilim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="romsisyazilim.aspx.designer.cs">
+      <DependentUpon>romsisyazilim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sahasatisyazilimi.aspx.cs">
+      <DependentUpon>sahasatisyazilimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sahasatisyazilimi.aspx.designer.cs">
+      <DependentUpon>sahasatisyazilimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="satinalmataleptedarikyazilimi.aspx.cs">
+      <DependentUpon>satinalmataleptedarikyazilimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="satinalmataleptedarikyazilimi.aspx.designer.cs">
+      <DependentUpon>satinalmataleptedarikyazilimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stokdepoyazilimi.aspx.cs">
+      <DependentUpon>stokdepoyazilimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stokdepoyazilimi.aspx.designer.cs">
+      <DependentUpon>stokdepoyazilimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yazilimegitimakademi.aspx.cs">
+      <DependentUpon>yazilimegitimakademi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yazilimegitimakademi.aspx.designer.cs">
+      <DependentUpon>yazilimegitimakademi.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="6698 sayılı Kişisel Verilerin Korunması.docx" />
+    <Content Include="6698kisiselverilerinkorunmasikanunu.pdf" />
+    <None Include="packages.config" />
+    <Content Include="RomsisUzakMesafeliSatisSozlesmesi.docx" />
+    <Content Include="Romsis_Gizlilik_Politikasi_Aydinlatma_Metni.docx" />
+    <Content Include="ticarielektronik.pdf" />
+    <Content Include="Romsis_Gizlilik_Politikasi_Aydinlatma_Metni.pdf" />
+    <Content Include="qrmenu_garson_kullan.pdf" />
+    <Content Include="qrmenu_garson_mobil_uygulama.pdf" />
+    <Content Include="qrmenu_musteri_panel.pdf" />
+    <Content Include="qrmenu_web_portal.pdf" />
+    <Content Include="Romsis_Cloud_Depo_Satis_Yazilimi.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="eng\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51631</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51631/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
